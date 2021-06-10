@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 1 7
+Title "Boat Monitor"
+Date "2021-06-09"
+Rev "A.1"
+Comp "Brian Scoggins"
 Comment1 ""
 Comment2 ""
 Comment3 ""

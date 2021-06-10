@@ -3,14 +3,251 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
-Title ""
-Date ""
-Rev ""
-Comp ""
+Sheet 4 7
+Title "Boat Monitor"
+Date "2021-06-09"
+Rev "A.1"
+Comp "Brian Scoggins"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Analog_ADC:ADS1115IDGS U?
+U 1 1 60CA42FD
+P 2600 2550
+F 0 "U?" H 2350 3000 50  0000 C CNN
+F 1 "ADS1115IDGS" H 2900 3000 50  0000 C CNN
+F 2 "Package_SO:TSSOP-10_3x3mm_P0.5mm" H 2600 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads1113.pdf" H 2550 1650 50  0001 C CNN
+	1    2600 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60CA5805
+P 2600 2950
+F 0 "#PWR?" H 2600 2700 50  0001 C CNN
+F 1 "GND" H 2605 2777 50  0000 C CNN
+F 2 "" H 2600 2950 50  0001 C CNN
+F 3 "" H 2600 2950 50  0001 C CNN
+	1    2600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60CA790C
+P 2600 1700
+F 0 "#PWR?" H 2600 1550 50  0001 C CNN
+F 1 "+3V3" H 2615 1873 50  0000 C CNN
+F 2 "" H 2600 1700 50  0001 C CNN
+F 3 "" H 2600 1700 50  0001 C CNN
+	1    2600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2050 2600 1700
+$Comp
+L Device:R R?
+U 1 1 60CAA4DE
+P 3000 2900
+AR Path="/609F6A3B/60CAA4DE" Ref="R?"  Part="1" 
+AR Path="/609FA587/60CAA4DE" Ref="R?"  Part="1" 
+F 0 "R?" H 3070 2946 50  0000 L CNN
+F 1 "10K 5% 1/16W" H 3070 2855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2930 2900 50  0001 C CNN
+F 3 "~" H 3000 2900 50  0001 C CNN
+	1    3000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60CAA701
+P 3000 3050
+F 0 "#PWR?" H 3000 2800 50  0001 C CNN
+F 1 "GND" H 3005 2877 50  0000 C CNN
+F 2 "" H 3000 3050 50  0001 C CNN
+F 3 "" H 3000 3050 50  0001 C CNN
+	1    3000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60CAB16C
+P 3500 2200
+AR Path="/609F6A3B/60CAB16C" Ref="R?"  Part="1" 
+AR Path="/609FA587/60CAB16C" Ref="R?"  Part="1" 
+F 0 "R?" H 3570 2246 50  0000 L CNN
+F 1 "10K 5% 1/16W" H 3570 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 3430 2200 50  0001 C CNN
+F 3 "~" H 3500 2200 50  0001 C CNN
+	1    3500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60CAB5EB
+P 4200 2200
+AR Path="/609F6A3B/60CAB5EB" Ref="R?"  Part="1" 
+AR Path="/609FA587/60CAB5EB" Ref="R?"  Part="1" 
+F 0 "R?" H 4270 2246 50  0000 L CNN
+F 1 "10K 5% 1/16W" H 4270 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 4130 2200 50  0001 C CNN
+F 3 "~" H 4200 2200 50  0001 C CNN
+	1    4200 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60CAB854
+P 4900 2200
+AR Path="/609F6A3B/60CAB854" Ref="R?"  Part="1" 
+AR Path="/609FA587/60CAB854" Ref="R?"  Part="1" 
+F 0 "R?" H 4970 2246 50  0000 L CNN
+F 1 "10K 5% 1/16W" H 4970 2155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 4830 2200 50  0001 C CNN
+F 3 "~" H 4900 2200 50  0001 C CNN
+	1    4900 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60CABAD7
+P 3500 2050
+F 0 "#PWR?" H 3500 1900 50  0001 C CNN
+F 1 "+3V3" H 3515 2223 50  0000 C CNN
+F 2 "" H 3500 2050 50  0001 C CNN
+F 3 "" H 3500 2050 50  0001 C CNN
+	1    3500 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60CAC3C9
+P 4200 2050
+F 0 "#PWR?" H 4200 1900 50  0001 C CNN
+F 1 "+3V3" H 4215 2223 50  0000 C CNN
+F 2 "" H 4200 2050 50  0001 C CNN
+F 3 "" H 4200 2050 50  0001 C CNN
+	1    4200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60CACB08
+P 4900 2050
+F 0 "#PWR?" H 4900 1900 50  0001 C CNN
+F 1 "+3V3" H 4915 2223 50  0000 C CNN
+F 2 "" H 4900 2050 50  0001 C CNN
+F 3 "" H 4900 2050 50  0001 C CNN
+	1    4900 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2350 3500 2350
+Wire Wire Line
+	3000 2550 4200 2550
+Wire Wire Line
+	4200 2550 4200 2350
+Wire Wire Line
+	3000 2650 4900 2650
+Wire Wire Line
+	4900 2650 4900 2350
+$Comp
+L Device:C C?
+U 1 1 60CADB26
+P 1000 1400
+F 0 "C?" H 1115 1446 50  0000 L CNN
+F 1 "C" H 1115 1355 50  0000 L CNN
+F 2 "" H 1038 1250 50  0001 C CNN
+F 3 "~" H 1000 1400 50  0001 C CNN
+	1    1000 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 60CAE6A4
+P 1350 1100
+F 0 "FB?" H 1487 1146 50  0000 L CNN
+F 1 "Ferrite_Bead" H 1487 1055 50  0000 L CNN
+F 2 "" V 1280 1100 50  0001 C CNN
+F 3 "~" H 1350 1100 50  0001 C CNN
+	1    1350 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 60CAFA5A
+P 1350 1700
+F 0 "FB?" H 1487 1746 50  0000 L CNN
+F 1 "Ferrite_Bead" H 1487 1655 50  0000 L CNN
+F 2 "" V 1280 1700 50  0001 C CNN
+F 3 "~" H 1350 1700 50  0001 C CNN
+	1    1350 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60CB06CA
+P 1350 1400
+F 0 "C?" H 1465 1446 50  0000 L CNN
+F 1 "C" H 1465 1355 50  0000 L CNN
+F 2 "" H 1388 1250 50  0001 C CNN
+F 3 "~" H 1350 1400 50  0001 C CNN
+	1    1350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60CB339B
+P 1350 1850
+F 0 "#PWR?" H 1350 1600 50  0001 C CNN
+F 1 "GND" H 1355 1677 50  0000 C CNN
+F 2 "" H 1350 1850 50  0001 C CNN
+F 3 "" H 1350 1850 50  0001 C CNN
+	1    1350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60CB3CFA
+P 1350 950
+F 0 "#PWR?" H 1350 800 50  0001 C CNN
+F 1 "+3V3" H 1365 1123 50  0000 C CNN
+F 2 "" H 1350 950 50  0001 C CNN
+F 3 "" H 1350 950 50  0001 C CNN
+	1    1350 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1250 1000 950 
+Wire Wire Line
+	1000 950  1350 950 
+Connection ~ 1350 950 
+Wire Wire Line
+	1350 1850 1000 1850
+Wire Wire Line
+	1000 1850 1000 1550
+Connection ~ 1350 1850
+Text HLabel 1850 2450 0    50   Input ~ 0
+Input_1
+Text HLabel 1850 2750 0    50   Input ~ 0
+Input_2
+Wire Wire Line
+	2200 2450 1850 2450
+Wire Wire Line
+	2200 2750 1850 2750
+NoConn ~ 2200 2550
+NoConn ~ 2200 2650
+Text HLabel 4250 2550 2    50   Input ~ 0
+SCL
+Text HLabel 4950 2650 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	4250 2550 4200 2550
+Connection ~ 4200 2550
+Wire Wire Line
+	4950 2650 4900 2650
+Connection ~ 4900 2650
 $EndSCHEMATC
